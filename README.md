@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🟢 ProtoPTX
+# ProtoPTX
 
 **A Custom Stack-Based Virtual Machine & Bytecode Assembler**
 
