@@ -4,10 +4,10 @@
 
 **A Custom Stack-Based Virtual Machine & Bytecode Assembler**
 
-[![C++ Standard](https://img.shields.io/badge/C%2B%2B-17-76b900.svg?logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
-[![Dependencies](https://img.shields.io/badge/Dependencies-Zero-76b900.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
+[![C++ Standard](https://img.shields.io/badge/C%2B%2B-17-58a6ff.svg?logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![Build Status](https://img.shields.io/badge/Build-Passing-58a6ff.svg)]()
+[![Dependencies](https://img.shields.io/badge/Dependencies-Zero-8957e5.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-58a6ff.svg)]()
 
 *ProtoPTX is a meticulously engineered Systems Architecture project, built entirely from scratch in modern C++. Designed to demonstrate a rigorous understanding of low-level systems programming, it features a custom 8-bit Instruction Set Architecture (ISA), manual bitwise memory deserialization, and a robust Fetch-Decode-Execute pipeline.*
 
@@ -22,9 +22,9 @@ ProtoPTX models a virtual hardware environment with explicit constraints. It ope
 
 ```mermaid
 graph TD
-    classDef default fill:#1a1a1a,stroke:#76b900,stroke-width:2px,color:#fff;
-    classDef decode fill:#333333,stroke:#76b900,stroke-width:2px,color:#fff;
-    classDef highlight fill:#76b900,stroke:#1a1a1a,stroke-width:2px,color:#000;
+    classDef default fill:#0d1117,stroke:#58a6ff,stroke-width:2px,color:#c9d1d9;
+    classDef decode fill:#21262d,stroke:#8957e5,stroke-width:2px,color:#c9d1d9;
+    classDef highlight fill:#58a6ff,stroke:#0d1117,stroke-width:2px,color:#0d1117;
     
     Start((Cycle Start)):::highlight --> Fetch
     
@@ -53,9 +53,9 @@ The system enforces strict memory bounds:
 
 ```mermaid
 graph LR
-    classDef byte fill:#1a1a1a,stroke:#76b900,stroke-width:1px,color:#fff;
-    classDef word fill:#333333,stroke:#76b900,stroke-width:2px,color:#76b900;
-    classDef reg fill:#76b900,stroke:#fff,stroke-width:2px,color:#000;
+    classDef byte fill:#0d1117,stroke:#58a6ff,stroke-width:1px,color:#c9d1d9;
+    classDef word fill:#21262d,stroke:#58a6ff,stroke-width:2px,color:#58a6ff;
+    classDef reg fill:#8957e5,stroke:#0d1117,stroke-width:2px,color:#fff;
     
     subgraph ProgramMemory [Bytecode Array - uint8_t]
         B0[Opcode]:::byte --- B1[Op: 0x00]:::byte --- B2[Op: 0x00]:::byte --- B3[Op: 0x00]:::byte --- B4[Op: 0x05]:::byte
@@ -157,3 +157,9 @@ g++ -std=c++17 main.cpp Assembler.cpp VM.cpp -o ProtoPTX.exe
 ```bash
 .\ProtoPTX.exe
 ```
+
+---
+
+<div align="center">
+  Built with ❤️ by Sujal Agrawal
+</div>
